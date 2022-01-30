@@ -1,3 +1,4 @@
+# A function that says hello to user
 def say_hello(name):
     """Mentions input name with Hello."""
     print("\nHello", name)
