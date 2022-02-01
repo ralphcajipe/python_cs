@@ -1,3 +1,6 @@
+# Write a program that uses exactly four for loops to print the
+# sequence of letters below.
+# AAAAAAAAAAAAAAABBBBBBBBBCDCDCDEFFFFFFFG
 for a in range(15):
     print('A', end='')
 for b in range(9):
