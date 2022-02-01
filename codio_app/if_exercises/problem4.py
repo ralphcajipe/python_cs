@@ -1,3 +1,4 @@
+# Student classifier
 credit = input("How many credits units you have taken: ")
 credit = int(credit)
 
