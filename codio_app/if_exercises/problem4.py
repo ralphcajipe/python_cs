@@ -1,7 +1,7 @@
 credit = input("How many credits units you have taken: ")
 credit = int(credit)
 
-if credit <= 23:
+if credit >= 1 and credit < 23:
     print("You are a freshman...")
 elif credit > 23 and credit <= 53:
     print("You are a sophomore...")

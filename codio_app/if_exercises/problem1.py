@@ -1,9 +1,13 @@
-length = float(input("Enter a length in centimeters: "))
+user_input = input("Enter a length in centimeters: ")
+cm = int(user_input)
 
-inch = length / 2.54
-
-if length > 0:
-    print("Answer:", inch, "inches.")
-
-else:
+if cm <= 0:
     print("Entry is invalid.")
+else:
+    inches = cm / 2.54
+    print("Answer is: {} inches.".format(round(inches, 17)))
+    # print("Answer is: %.17f inches " % inches)
+    # print("Answer:", inch, "inches.")
+
+# 14 decimals works
+# 17 decimal works
