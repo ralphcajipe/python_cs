@@ -1,6 +1,6 @@
 a = True
 
-if not(a):
+if not (a):
 
     print("A")
 
