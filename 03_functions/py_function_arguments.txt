@@ -1,0 +1,4 @@
+In Python, you can define a function that takes variable
+number of arguments. In this article, you will learn to define
+such functions using default, keyword and arbitrary
+arguments.
