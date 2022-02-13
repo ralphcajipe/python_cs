@@ -9,3 +9,9 @@ while i < len(numbers):
     print(i)
 else:
     print("End of while loop")
+
+"""
+NOTE:
+10 is still printed because length of numbers is 9 when 5 was skipped.
+10 is part of the len(numbers) which is 9.
+"""
