@@ -9,6 +9,12 @@ class Number:
     the equivalent roman numeral and vice-versa.
     """
 
+    """
+    1s and 2s values are the length of the associated strings 
+    - e.g., M == 1, IX == 2. These values are used in the 
+    _toInteger() method to adjust the offset into the string being processed. 
+    This is more efficient than using len().
+    """
     control = [
         (1000, 'M', 1),
         (900, 'CM', 2),
@@ -59,11 +65,11 @@ class Number:
         return result
 
 
-# Main Menu
+# Menu
 def main():
     print("\nMENU")
     print("[1] Convert an Integer to a Roman Numeral")
-    print("[2] convert a Roman Numeral to an Integer")
+    print("[2] Convert a Roman Numeral to an Integer")
     print("[3] exit")
 
 
