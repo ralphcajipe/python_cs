@@ -25,6 +25,7 @@ class Number:
         (1, 'I', 1)]
 
     def __init__(self, value):
+        """Initialize attributes for conversion."""
         if isinstance(value, int):
             self.value = value
         elif value.isdigit():
@@ -33,12 +34,15 @@ class Number:
             self.value = self._toInteger(value)
 
     def asInteger(self):
+        """ return Roman Numerals to Number"""
         return self.value
 
     def asRoman(self):
+        """return Number to Roman Numerals"""
         return self.toRoman(self.value)
 
     def toRoman(self, num):
+        """Number to Roman Numerals algorithm"""
         if num == 0:
             return ''
         for v, c, _ in Number.control:
@@ -46,6 +50,7 @@ class Number:
                 return c + self.toRoman(num - v)
 
     def _toInteger(self, num):
+        """Roman Numerals to Number algorithm"""
         result, offset = 0, 0
         for c, r, l in Number.control:
             while num[offset:].startswith(r):
