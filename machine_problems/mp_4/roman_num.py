@@ -1,3 +1,9 @@
+"""
+Program that accepts integer as input and display
+the equivalent roman numeral and vice-versa.
+The program should be written in OOP.
+"""
+
 import sys
 
 MAX_VALUE_INT = 5000
@@ -75,25 +81,31 @@ def main():
 
 while True:
     main()
-    choice = eval(input("\nEnter your choice: "))
+    try:
+        choice = eval(input("\nEnter your choice: "))
+    except NameError:
+        print("Invalid choice. Enter 1, 2, or 3 only.")
+    else:
+        if choice == 1:
+            user_input = eval(input("\nEnter Integer: "))
+            if int(user_input) > MAX_VALUE_INT:
+                print("MAX VALUE is 5000. Try lower than that.")
+            else:
+                num_obj = Number(user_input)
+                print("Output in Roman Numerals is", num_obj.asRoman())
+                # After output, return to Menu
 
-    if choice == 1:
-        user_input = eval(input("Enter Integer:"))
-        if int(user_input) > MAX_VALUE_INT:
-            print("MAX VALUE is 5000. Try lower than that.")
+        elif choice == 2:
+            user_input = str(input("\nEnter Roman Numeral: "))
+            if MAX_VALUE_STR in str(user_input):
+                print("MAX VALUE is MMMMM. Try lower than that.")
+            else:
+                roman_obj = Number(user_input.upper())
+                print("Output in Integer is", roman_obj.asInteger())
+                # After output, return to Menu
+
+        elif choice == 3:
+            sys.exit()
+
         else:
-            num_obj = Number(user_input)
-            print("Output in roman numeral is", num_obj.asRoman())
-            # After output, return to Menu
-
-    elif choice == 2:
-        user_input = str(input("Enter Roman Numeral:"))
-        if MAX_VALUE_STR in str(user_input):
-            print("MAX VALUE is MMMMM. Try lower than that.")
-        else:
-            roman_obj = Number(user_input.upper())
-            print("Output in Integer is", roman_obj.asInteger())
-            # After output, return to Menu
-
-    elif choice == 3:
-        sys.exit()
+            print("Invalid choice. Enter 1, 2, or 3 only.")
