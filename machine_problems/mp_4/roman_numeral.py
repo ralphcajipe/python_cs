@@ -73,16 +73,19 @@ class Number:
 
 # Menu
 def main():
-    print("\nMENU")
+    border = "="
+    print(f"\n{border * 42}")
+    print("MENU")
     print("[1] Convert an Integer to a Roman Numeral")
     print("[2] Convert a Roman Numeral to an Integer")
     print("[3] exit")
+    print(border * 42)
 
 
 while True:
     main()
     try:
-        choice = eval(input("\nEnter your choice: "))
+        choice = eval(input("Enter your choice: "))
     except NameError:
         print("Invalid choice. Enter 1, 2, or 3 only.")
     else:
