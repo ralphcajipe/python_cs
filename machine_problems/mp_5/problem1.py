@@ -1,3 +1,18 @@
+"""
+Machine Problem 1:
+Given the following list of numbers:
+63, 52, 10, 42, 32, 17, 60, 45, 47, 39,
+71, 55, 41, 95, 70, 48, 42, 32, 13, 35
+
+     Perform the following operations
+     (a) Print the list.
+     (b) Print the average of the elements in the list.
+     (c) Print the largest and smallest values in the list.
+     (d) Print the second-largest and second-smallest entries in the list.
+     (e) Print how many even numbers are in the list.
+     (f) Print how many odd numbers are in the list.
+"""
+
 l = [63, 52, 10, 42, 32, 17, 60, 45, 47, 39,
      71, 55, 41, 95, 70, 48, 42, 32, 13, 35]
 
