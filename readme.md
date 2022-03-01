@@ -1,3 +1,5 @@
+<b> Note: This repository is in active development. Corresponding documentation hopefully coming soon. Thank you reader. </b>
+
 Structure of Programming Language
 
 This repository covers specifics of writing programs in Python, 
