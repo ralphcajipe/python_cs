@@ -1,0 +1,12 @@
+File & Directory Related Methods:
+
+There are three important sources which provide a wide
+range of utility methods to handle and manipulate files &
+directories on Windows and Unix operating systems. They
+are as follows:
+
+• File Object Methods: The file object provides functions to
+manipulate files. https://www.tutorialspoint.com/python/file_methods.htm
+
+• OS Object Methods.: This provides methods to process files as well
+as directories. https://www.tutorialspoint.com/python/os_file_methods.htm
