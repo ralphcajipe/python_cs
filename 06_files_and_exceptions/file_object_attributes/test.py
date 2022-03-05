@@ -1,0 +1,6 @@
+file_object = open("test.txt", "wb")
+print("Name of file:", file_object.name)
+print("Closed or not:", file_object.closed)
+print("Opening mode:", file_object.mode)
+# print("Softspace flag:", file_object.softspace)
+file_object.close()
